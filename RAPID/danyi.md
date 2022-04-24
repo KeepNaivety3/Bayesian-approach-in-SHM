@@ -24,9 +24,9 @@
 
 图 1(a) 显示了从美国海军获得的用于本研究的 E-2 侦察机机翼部分。 它由铝合金制成并涂有油漆。 为了便于传感器实施和实验，机翼部分的顶部蒙皮用等离子切割工具拆卸。 图 1(b) 显示了拆卸的顶部蒙皮片的图片。 解剖后制作了几个顶部蒙皮面板样品，并且机翼的内部结构，例如 Dspars、肋和加强筋，可用于实验研究。
 
-<img src=".assets/Fig1.png" style="zoom: 100%" />
+<img src=".assets/Fig1.png" style="zoom: 50%" />
 
-<img src=".assets/Fig2.png" style="zoom: 100%" />
+<img src=".assets/Fig2.png" style="zoom: 50%" />
 
 > Figure 2(a) shows a schematic of a piece of the top wing panel and its rivet distribution (in hollow circles). Those rivets are used to fasten the wing panel to the inner structures, such as spars and ribs, but most of them are to strengthen the wing skin with L-shaped stiffeners. Figure 2(b) shows a detailed sketch of a stiffener riveted to the wing skin. As shown in figure 2(b), the wing skin is a bit thicker under the stiffeners than where there is no stiffener. Thickness measurement was carried out with a micrometer. The average thicknesses of the wing skin with paint are about 1.08 and 1.51 mm, respectively, at different wing sections, and the additional thickness beneath the stiffener varies from 0.3 to 0.6 mm.
 
@@ -36,7 +36,7 @@
 
 翼板的几何复杂性导致复杂的超声波导波传播特性。传统的等厚板模型在这里不能直接应用，因为厚度的变化会导致波速、振型和模式转换等的变化。机翼蒙皮在外表面也至少涂有两层油漆，一个在内表面上，它大大衰减了超声波能量。此外，翼板每6.5厘米分布一排铆钉，铆钉间距小于9毫米。这为穿过铆钉行的波引入了巨大的能量散射和阻塞。我们在机翼面板上进行了初始波传播研究，其中两个角度波束换能器处于直通模式。在第一种情况下，传感器被放置在两个相邻的铆钉行之间，并且接收器从发射器 (T) 移开，沿着图 2(a) 中的“x”线移动。因此波传播主要平行于铆钉行。图 3 显示了当接收器传感器距离发射器 20–200 mm 时收集的样本 1.8 MHz S0 模式 Lamb 波信号。由于光束扩散、波泄漏到涂料和衰减，波幅减小随距离变化非常明显。 $S_0$ 模式 Lamb 波的平均信号衰减率约为 0.044 dB $mm^{−1}$。在第二种情况下，传感器垂直于铆钉行放置，接收器位置如图 2(a) 所示，为“$\Delta$”。 1.8 MHz $S_0$ 模式 Lamb 波在铆钉散射、板厚变化、波泄漏到加强筋粘合接头等引起的传播。信号形状也在时域扩展，多路径/散射信号进入 (此处未显示）。从以上研究可以看出，衰减、漏波和散射效应确实限制了导波的检测范围。实现导波致动器/传感器网络。
 
-<img src=".assets/Fig3.png" style="zoom: 100%" />
+<img src=".assets/Fig3.png" style="zoom: 50%" />
 
 ## 3. PZT transducer array network for wing panel SHM
 
@@ -44,19 +44,19 @@
 
 锆钛酸铅（PZT）是一种具有高机电耦合系数的压电材料。它广泛用于声学和超声波设备中以产生和接收声波。我们实验中使用的 PZT 圆盘换能器由 PZT 陶瓷制成，圆盘两侧均带有银电极。它们是从 American Piezo Ceramics Inc（材料型号 850）订购的。当换能器在厚度方向上被电极化时，可以通过在顶部和底部电极之间施加交流电压来激发几种振动模式。我们实验中使用的 PZT 圆盘换能器样品如图 4 所示。陶瓷的厚度和直径分别为 10 密耳（0.254 毫米）和 1/4 英寸（6.3 毫米）。通常，在这种厚度极化盘中可以激发两种振动模式：厚度模式和径向模式。模式频率由厚度和直径的设计参数以及材料特性控制。在这个超声波导波实验中使用了径向共振。厚度共振也可以在较高频率下以较低的波激发效率观察到。
 
-<img src=".assets/Fig4.png" style="zoom: 100%" />
+<img src=".assets/Fig4.png" style="zoom: 50%" />
 
 > To attach a PZT sensor to the wing structures, the surface of the wing section is cleaned first with alcohol, and a copper tape is attached to the cleaned surface. Then a PZT disc is glued on top of the copper tape with conductive epoxy. Finally, a lead wire is soldered or glued with conductive epoxy to the top surface of the sensor to serve as the signal wire and the copper tape is used as the electrical ground. To insulate the sensor and protect it from shock or vibration, the sensor assembly could be covered with epoxy, with only the signal and ground wires leading out. The electric mechanical impedances of the sensors were measured with an impedance analyser (HP 4192) to check their performance. The decibel scale impedance was obtained from the reading of an impedance analyser’s $Z_\Omega$ with $Z_{dB} = 20log_{10}(|Z_\Omega|)$. In figure 5, the dashed curve shows the free vibration disc in air; and the solid curves show the PZT impedance after being bonded to the wing  the free vibration curve corresponds to the resonance in the radial direction of the disc. The higher-order resonances are  the wing skin, the resonance phenomenon is not as significant as the free vibration condition. However, operation around 350 kHz still has good wave excitation efficiency. Furthermore, the sensor implementation uniformity and potential differences in the mechanical properties of the wing panel cause slight differences in the impedance spectra of these attached sensors.
 
 要将 PZT 传感器连接到机翼结构上，首先用酒精清洁机翼部分的表面，然后将铜带贴在清洁后的表面上。然后用导电环氧树脂将 PZT 圆盘粘在铜带上。最后，将导线焊接或用导电环氧树脂胶粘到传感器的顶部表面，作为信号线，铜带用作电气接地。为了使传感器绝缘并保护其免受冲击或振动，传感器组件可以用环氧树脂覆盖，只有信号线和地线引出。使用阻抗分析仪 (HP 4192) 测量传感器的电气机械阻抗以检查其性能。分贝阻抗是从阻抗分析仪的 $Z_\Omega$ 读数中获得的，其中 $Z_{dB} = 20log_{10}(|Z_\Omega|)$。在图5中，虚线表示空气中的自由振动盘；实线表示与机翼粘合后的PZT阻抗，自由振动曲线对应于圆盘径向的共振。高阶共振是机翼蒙皮，共振现象不如自由振动条件显着。然而，在 350 kHz 附近运行仍具有良好的波激发效率。此外，传感器实现的一致性和翼板机械性能的电位差会导致这些附加传感器的阻抗谱略有不同。
 
-<img src=".assets/Fig5.png" style="zoom: 100%" />
+<img src=".assets/Fig5.png" style="zoom: 50%" />
 
 > For demonstration purposes, a circular array configuration of the PZT transducer network was implemented on the wing panel for defect monitoring. Such a configuration should be useful for monitoring a well-defined region or a structural ‘hot spot’ where defects are most likely to occur. In our study, eight piezo-ceramic discs were attached to the aircraft wing surface in a circle about 10 inches in diameter. The discs are nearly equally spaced. Figure 6 shows the example array, with arabic numbers 1, 2,..., 8 marked nearby to identify each PZT. A MATEC TB-1000 tone burst pulser/receiver card was used to generate and receive the ultrasonic signals. A 100 V peak-to-peak 350 kHz windowed sinusoidal signal (three to four cycles) was used to drive the PZT actuator. The PZT discs take turns generating ultrasonic signals while the rest of them are listening. For example, when disc 1 is sending a signal, sensors 2–8 are in the reception mode; then disc 2 is transmitting signals and sensors 1, 3–8 are listening, and so on. The waveforms of each actuator-sensor pairs are collected. Figure 7 shows an example waveform collected from actuatorsensor pairs 1 and 8 with and without a crack. Note that at 350 kHz, S0 and A0 mode Lamb waves could exist in the wing panel; besides, the scattering of the guided waves from the rivet rows also complicated the waveform, therefore it is difficult, if not impossible, to identify the wave modes from the raw signal. A physics-based statistical data processing algorithm is thus developed for real-time processing of the data so that the defect presence, growth, and location can be monitored effectively. Of course, for applying the PZT actuator/sensor network to a general structure, the single circular array configuration could be expanded to a network of arrays in hexagons, for example, so that a large structural area could be monitored.
 
 出于演示目的，在翼板上实施了 PZT 换能器网络的圆形阵列配置，用于缺陷监测。这种配置对于监控最有可能出现缺陷的明确定义的区域或结构“热点”应该很有用。在我们的研究中，八个压电陶瓷盘以直径约 10 英寸的圆形连接到飞机机翼表面。圆盘几乎等间距。图 6 显示了示例数组，在附近标记了阿拉伯数字 1、2、...、8 以识别每个 PZT。 MATEC TB-1000 音调脉冲发生器/接收卡用于产生和接收超声波信号。使用 100 V 峰峰值 350 kHz 加窗正弦信号（三到四个周期）来驱动 PZT 致动器。 PZT 圆盘轮流产生超声波信号，而其余的圆盘正在监听。例如，当圆盘 1 发送信号时，传感器 2-8 处于接收模式；然后光盘 2 正在传输信号，传感器 1、3-8 正在监听，依此类推。收集每个致动器-传感器对的波形。图 7 显示了从执行器传感器对 1 和 8 收集的示例波形，有裂纹和无裂纹。请注意，在 350 kHz 时，S0 和 A0 模式 Lamb 波可能存在于机翼面板中；此外，来自铆钉行的导波的散射也使波形复杂化，因此即使不是不可能，也很难从原始信号中识别波模式。因此，开发了一种基于物理的统计数据处理算法，用于实时处理数据，从而可以有效地监控缺陷的存在、增长和位置。当然，为了将 PZT 致动器/传感器网络应用于一般结构，例如，可以将单个圆形阵列配置扩展到六边形阵列网络，以便可以监控大的结构区域。
 
-<img src=".assets/Fig6.png" style="zoom: 100%" />
+<img src=".assets/Fig6.png" style="zoom: 50%" />
 
 
 
@@ -120,4 +120,4 @@ $$
 
 是点 $(x,y)$ 到发射器 $i$ 和接收器 $j$ 的距离之和（焦点半径）与发射器和接收器之间的距离之比。 $\beta$ 是控制椭圆有效分布区域大小的缩放参数，$\beta>1$。当$R_{ij}(x,y)=1$，即点$(x,y)$在发射机-接收机对$S_{ij}$的直线上，$P_{ij}=A_ {ij}$;当$R_{ij}(x,y)=\beta$，即点$(x,y)$在有效分布区域的边界上，$P_{ij}=0$。通常，$\beta$ 选择在 1.05 左右。如果$\beta$ 太小，则会引入伪影，如果$\beta$ 太大，则会丢失分辨率。通常，如果出现缺陷，一组传感器对信号将受到影响。结果，与其他点相比，位于缺陷中的概率明显更大。因此，通过应用图像处理技术，例如明智地选择缺陷估计图像的阈值，可以估计缺陷位置。
 
-<img src=".assets/Fig8.png" style="zoom: 100%" />
+<img src=".assets/Fig8.png" style="zoom: 50%" />
